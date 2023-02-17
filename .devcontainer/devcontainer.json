@@ -1,0 +1,29 @@
+{
+	"name": "Wasp",
+	"build": {
+        // Path is relataive to the devcontainer.json file.
+        "dockerfile": "Dockerfile"
+    },
+
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"workbench.iconTheme": "material-icon-theme"
+			},
+			"extensions": [
+				"wasp-lang.wasp",
+                "PKief.material-icon-theme"
+			]
+		}
+	},
+
+	"forwardPorts": [3000],
+
+	"portsAttributes": {
+		"3000": {
+			"label": "Web App"
+		}
+	},
+
+	"remoteUser": "root"
+}

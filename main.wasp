@@ -1,0 +1,11 @@
+app codespacesApp {
+  wasp: {
+    version: "^0.8.0"
+  },
+  title: "codespaces-app"
+}
+
+route RootRoute { path: "/", to: MainPage }
+page MainPage {
+  component: import Main from "@client/MainPage"
+}
